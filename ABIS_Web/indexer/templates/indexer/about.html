@@ -1,0 +1,36 @@
+{% extends 'indexer/base/base.html' %}
+{% load static %}
+
+{% block title %} About ABIS {% endblock %}
+{% block site_css%}
+<link rel="stylesheet" href="{% static 'indexer/styles/base.css'%}">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+{% endblock %} 
+    
+    
+{% block body %}
+    <header class="header">
+        <h2 class="header_title">
+            <span class="span1">/</span><span class="span2">Book Indexer</span>
+        </h2>
+            <nav class="header_navigation"> 
+                <a href="#">About</a>
+                <a href="{% url 'import'  %}">Import File</a>
+            </nav>
+        
+    </header>
+    <div class="wrapper">
+    
+        <main>
+            <h1>Thank you, 
+                I could not done it without your help</h1>
+            <p>My name is Mukhoram Dimas, final-year student at Informatics Engineering of ITS. Currently aiming to be able to contribute to the society using Information Technology.</p>
+                
+        </main>
+
+    </div>
+
+{% endblock %}
+
+</html>

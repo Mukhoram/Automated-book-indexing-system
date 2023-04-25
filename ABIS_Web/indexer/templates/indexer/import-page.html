@@ -1,0 +1,41 @@
+{% extends 'indexer/base/base.html'%}
+
+{% load static %}
+
+{% block title %}
+ Import Page
+{% endblock %}
+{% block site_css%}
+
+
+    
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+{% endblock %}
+
+
+{% block body %}
+    <header class="header">
+        <h2 class="header_title">
+            <span class="span1">/</span><span class="span2">Book Indexer</span>
+        </h2>
+           
+    </header>
+    <div class="wrapper">
+    
+        <main>
+            <h1>Indexing is no longer a problem.</h1>
+            <p>Please put your book file here. It might take a while to index, 
+                be sure it is worth the wait</p>
+                <div class="upload">
+                     <form enctype="multipart/form-data">
+                        <input type="file" id="pdf-file" name="pdf-file" accept="application/pdf">
+                        <label for="pdf-file" class="upload-btn">Upload PDF</label>
+                      </form> 
+                      
+                </div>
+        </main>
+
+    </div>
+    {% endblock %}
+</html>

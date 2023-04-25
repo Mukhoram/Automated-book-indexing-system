@@ -1,0 +1,37 @@
+{% extends 'indexer/base/base.html' %}
+{% load static %}
+
+{% block title %} ABIS Landing Page {% endblock %}
+{% block site_css%}
+<link rel="stylesheet" href="{% static 'indexer/styles/base.css'%}">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+{% endblock %} 
+    
+    
+{% block body %}
+    <header class="header">
+        <h2 class="header_title">
+            <span class="span1">/</span><span class="span2">Book Indexer</span>
+        </h2>
+            <nav class="header_navigation"> 
+                <a href="{% url 'about'  %}">About</a>
+            </nav>
+        
+    </header>
+    <div class="wrapper">
+    
+        <main>
+            <h1>Convenience in indexing your books.</h1>
+            <p>This web could assist you in book indexing process,
+                all you need to prepare is your book pdf file.</p>
+                <div class="buttons">
+                    <a href ="{% url 'import'  %}" class="button_click">Click here to start</a>
+                </div>
+        </main>
+
+    </div>
+
+{% endblock %}
+
+</html>
