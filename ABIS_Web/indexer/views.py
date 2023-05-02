@@ -18,3 +18,6 @@ def import_page(request):
 
 def about(request):
     return render(request , 'indexer/about.html')
+
+def download_page(request):
+    return render(request, 'indexer/download-page.html')
